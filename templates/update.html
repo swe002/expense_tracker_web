@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Update Expense</title>
+</head>
+<body style="font-family:Arial; margin:50px;">
+
+<h2>Update Expense</h2>
+
+<form method="POST">
+    <input type="number" step="0.01" name="amount"
+           value="{{ expense['amount'] }}" required><br><br>
+
+    <input type="text" name="category"
+           value="{{ expense['category'] }}" required><br><br>
+
+    <input type="date" name="date"
+           value="{{ expense['date'] }}" required><br><br>
+
+    <input type="text" name="description"
+           value="{{ expense['description'] }}"><br><br>
+
+    <button type="submit">Update</button>
+</form>
+
+<br>
+<a href="/dashboard">Back</a>
+
+</body>
+</html>
